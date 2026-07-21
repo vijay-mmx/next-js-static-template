@@ -2,7 +2,7 @@ $primary: #00a651;
 $accent: #231f20;
 
 // font
-$font-family-sans-serif: "jules-font", -apple-sytem, Roboto, sans-serif;
+$font-family-sans-serif: "neue-haas-grotesk-display", -apple-sytem, Roboto, sans-serif;
 $headings-font-family: "jules-font", -apple-sytem, Roboto, sans-serif;
 
 $headings-font-weight: 300;
@@ -78,39 +78,184 @@ $custom-colors: (
 }
 
 // body
-// IvyPresto: Headline & Display not good, Text looks good
 @font-face {
-    font-family: 'IvyPresto Headline font';
-    src: url('../fonts/ivy/IvyPrestoHeadline-Thin.woff2') format('woff2'),
-        url('../fonts/ivy/IvyPrestoHeadline-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'IvyPresto Headline font';
-    src: url('../fonts/ivy/IvyPrestoHeadline-Light.woff2') format('woff2'),
-        url('../fonts/ivy/IvyPrestoHeadline-Light.woff') format('woff');
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-Light.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-    font-family: 'IvyPresto Headline font';
-    src: url('../fonts/ivy/IvyPrestoHeadline-BoldItalic.woff2') format('woff2'),
-        url('../fonts/ivy/IvyPrestoHeadline-BoldItalic.woff') format('woff');
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-Black.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-BlackItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
+
 @font-face {
-    font-family: 'IvyPresto Headline font';
-    src: url('../fonts/ivy/IvyPrestoHeadline-SemiBold.woff2') format('woff2'),
-        url('../fonts/ivy/IvyPrestoHeadline-SemiBold.woff') format('woff');
-    font-weight: 600;
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-LightItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-Mediu.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-Mediu.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-MediumItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-Roman.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-Roman.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-RomanItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-RomanItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-Thin.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-ThinItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-XThin.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-XThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-XXThin.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-XXThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-XThinItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-XThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'neue-haas-grotesk-display';
+    src: url('../fonts/neue_has/NeueHaasDisplay-XXThinItalic.woff2') format('woff2'),
+        url('../fonts/neue_has/NeueHaasDisplay-XXThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+// body
+// IvyPresto: Headline & Display not good, Text looks good
+// @font-face {
+//     font-family: 'IvyPresto Headline font';
+//     src: url('../fonts/ivy/IvyPrestoHeadline-Thin.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoHeadline-Thin.woff') format('woff');
+//     font-weight: 100;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'IvyPresto Headline font';
+//     src: url('../fonts/ivy/IvyPrestoHeadline-Light.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoHeadline-Light.woff') format('woff');
+//     font-weight: 300;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'IvyPresto Headline font';
+//     src: url('../fonts/ivy/IvyPrestoHeadline-BoldItalic.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoHeadline-BoldItalic.woff') format('woff');
+//     font-weight: bold;
+//     font-style: italic;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'IvyPresto Headline font';
+//     src: url('../fonts/ivy/IvyPrestoHeadline-SemiBold.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoHeadline-SemiBold.woff') format('woff');
+//     font-weight: 600;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
 // @font-face {
 //     font-family: 'IvyPresto Display';
