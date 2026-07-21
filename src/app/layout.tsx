@@ -1,11 +1,15 @@
 import "../styles/globals.scss";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
 import Header from "@/components/global/header";
 import GsapProvider from "@/providers/gsap-provider";
 import LoaderProvider from "@/providers/loader-provider";
-import Menu from "@/components/global/menu";
 import UniversalForceRefreshFix from "@/components/shared/universal-force-refresh-fix";
 import type { Metadata } from "next";
-import Script from "next/script";
+// import Script from "next/script";
 
 // import { Instrument_Serif } from "next/font/google";
 // const fontSerif = Instrument_Serif({
@@ -136,7 +140,6 @@ export default function RootLayout({
                 <LoaderProvider>
                     {/* <GSAPCleanup /> */}
                     <UniversalForceRefreshFix />
-                    {/* <Menu /> */}
                     <Header />
                     <GsapProvider>
                         {children}

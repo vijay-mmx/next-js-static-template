@@ -1,0 +1,119 @@
+
+
+
+
+.farms-slider-wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.farms-slider {
+    // width: 110vw;
+    clip-path: inset(-100% 0% 0% 20%);
+    .swiper-wrapper {
+        padding-left: 20%;
+    }
+}
+
+.farms-slide-item-content {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.farms-slide-item {
+    overflow: hidden;
+    width: 100%;
+    .ratio {
+        --bs-aspect-ratio: 140%;
+        overflow: hidden;
+    }
+    img {
+        transition: all 0.3s ease-in-out;
+    }
+      
+}
+.farms-slide-item-title {
+    font-size: 1.8rem;
+    font-family: var(--bs-headings-font-family);
+    transition: transform 0.3s ease-in-out;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    color: $primary;
+    @media screen and (max-width: 1200px) {
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 0.98rem;
+    }
+}
+
+.farms-slide-item-country {
+    // text-transform: uppercase;
+    // font-weight: 500;
+    // letter-spacing: 1px;
+    // font-size: 0.9rem;
+    // transition: transform 0.3s ease-in-out;
+    @media screen and (max-width: 768px) {
+        font-size: 0.85rem;
+    }
+}
+.farms-slide-item-index {
+    @media screen and (max-width: 768px) {
+        font-size: 0.9rem;
+    }
+}
+
+.farms-slider-container {
+    .swiper-navigation {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        display: inline-flex;
+        flex-direction: column;
+        z-index: 2;
+        gap: 1rem;
+        transform: translate(-25px, -50%);
+        button {
+            width: 50px;
+            height: 50px;
+            background: var(--bs-primary);
+            border-radius: 50%;
+            color: white;
+            svg {
+                width: 25px;
+                height: 25px;
+                stroke-width: 2px;
+            }
+            @media screen and (max-width:576px) {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        @media screen and (max-width:576px) {
+            top: 35%;
+            gap: 0.5rem;
+        }
+    }
+}
+
+// .farms-slider-container {
+//     position: relative;
+// }
+
+.farms-slide-item:hover .farms-slide-item-title {
+    transform: translate(0px);
+}
+
+.farms-slide-item:hover .farms-slide-item-country {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.farms-slide-item:hover img {
+    transform: scale(1.05);
+}
