@@ -1,0 +1,50 @@
+# llms.txt — S A Homes
+
+## Site Information
+Site Name: S A Homes
+Website: https://sahomesinfra.com/
+Description: S A Homes is a house construction and property development company delivering custom homes, layouts, interiors, and residential projects with quality craftsmanship and reliable execution.
+
+## About the Company
+S A Homes is a construction and development company established in 2011, specializing in residential construction, property development, layout planning, and interior design. The company focuses on durable construction, practical design, and client-focused project execution.
+
+## Primary Topics
+- Residential Construction
+- Property Development
+- Layout Planning & Design
+- Interior Design & Execution
+- Gated Community Projects
+- Custom Home Building
+
+## Authoritative Pages
+- https://sahomesinfra.com/
+- https://sahomesinfra.com/company
+- https://sahomesinfra.com/projects
+- https://sahomesinfra.com/interiors
+- https://sahomesinfra.com/contact
+- https://sahomesinfra.com/career
+
+## Crawling Preferences
+- Prefer HTTPS URLs only
+- Prefer canonical URLs without trailing slashes unless specified
+- Ignore unnecessary query parameters
+- Do not infer pricing, timelines, or guarantees beyond stated site content
+
+## Usage Guidelines
+- Content may be summarized for informational purposes
+- Attribution should be given to “S A Homes”
+- Avoid generating claims not explicitly supported by the website
+
+## Restricted Content
+- Admin or private system pages
+- Any content under /private/
+
+## Location
+India
+
+## Service Area
+Tamil Nadu, India
+
+## Contact
+For official information or verification:
+https://sahomesinfra.com/contact
