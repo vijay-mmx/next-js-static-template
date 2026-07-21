@@ -1,17 +1,13 @@
-$primary: #002447;
-$primary-rgb: rgb(0, 36, 71);
-$accent: #c2b29e;
-$accent-rgb: rgb(194, 178, 158);
-$accent-dark: #af9c89;
-// $accent: #c2b5a3;
-// $kakhi: #6f5d43;
-// $kakhi-rgb: rgb(84, 73, 57);
+$primary: #00a651;
+$accent: #231f20;
 
-$font-family-sans-serif: "neue-haas-grotesk-display", -apple-sytem, Roboto, sans-serif;
-$headings-font-family: "Solitas Serif Cond", -apple-sytem, Roboto, sans-serif;
-// $headings-font-family: "neue-haas-grotesk-display", -apple-sytem, Roboto, sans-serif;
-$headings-font-weight: 600;
-$display-font-weight: 600;
+// font
+$font-family-sans-serif: "jules-font", -apple-sytem, Roboto, sans-serif;
+$headings-font-family: "jules-font", -apple-sytem, Roboto, sans-serif;
+
+$headings-font-weight: 300;
+$headings-color: #1c1d1f;
+$display-font-weight: 300;
 $headings-line-height: 1.1;
 $link-decoration: none;
 $paragraph-margin-bottom: 0px;
@@ -37,87 +33,153 @@ $container-max-widths: (
 $lead-font-size: 1.25rem;
 $lead-font-weight: 400;
 
-$accordion-inner-border-radius: 0;
 $accordion-button-active-bg: transparent;
+$accordion-bg: transparent;
 $accordion-border-radius: 0;
-$accordion-border-width: 0;
-$accordion-body-padding-x: 0;
-$accordion-button-padding-x: 0;
-$accordion-button-focus-box-shadow: none;
+$accordion-button-active-color: $primary;
 
 $dropdown-border-radius: 0px;
-
 $modal-content-border-radius: 0px;
-$border-color: #ffffff30;
 
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 
+$body-bg: #f9f8f4;
+$body-color: #212529bf;
+
 $custom-colors: (
     "accent": $accent,
-    "accent-rgb": $accent-rgb,
-    "accent-dark": $accent-dark,
+    "beige": #f5f5dc,
 );
-
-$theme-colors: map-merge($theme-colors, $custom-colors);
-// $body-bg: black;
-$body-bg: #212121;
-$body-color: white;
 
 @import "bootstrap/scss/bootstrap";
 @import "./common";
-@import "./components";
+@import "./components/index";
+
+// FONTS IMPORT
+// heading
 @font-face {
-    font-family: "Queens";
-    src: url(../fonts/queens/QueensVarTrial.ttf) format("truetype");
-    font-weight: 100 900;
+    font-family: 'jules-font';
+    src: url('../fonts/jules/jules.woff2') format('woff2'),
+        url('../fonts/jules/jules.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
-
+// Hero font
 @font-face {
-    font-family: "Queens";
-    src: url(../fonts/queens/QueensVarItalicTrial.ttf) format("truetype");
-    font-weight: 100 900;
-    font-style: italic;
-    font-display: swap;
-}
-
-// For Headings
-@font-face {
-    font-family: "Solitas Serif Cond";
-    src: url(../fonts/SolitasSerif/SolitasSerif-ConReg.woff2) format("woff2"); //wodd2
+    font-family: 'didot-font';
+    src: url('../fonts/didot/didot.woff2') format('woff2'),
+        url('../fonts/didot/didot.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
+// body
+// IvyPresto: Headline & Display not good, Text looks good
+@font-face {
+    font-family: 'IvyPresto Headline font';
+    src: url('../fonts/ivy/IvyPrestoHeadline-Thin.woff2') format('woff2'),
+        url('../fonts/ivy/IvyPrestoHeadline-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IvyPresto Headline font';
+    src: url('../fonts/ivy/IvyPrestoHeadline-Light.woff2') format('woff2'),
+        url('../fonts/ivy/IvyPrestoHeadline-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IvyPresto Headline font';
+    src: url('../fonts/ivy/IvyPrestoHeadline-BoldItalic.woff2') format('woff2'),
+        url('../fonts/ivy/IvyPrestoHeadline-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'IvyPresto Headline font';
+    src: url('../fonts/ivy/IvyPrestoHeadline-SemiBold.woff2') format('woff2'),
+        url('../fonts/ivy/IvyPrestoHeadline-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
 // @font-face {
-//     font-family: 'Solitas Serif Cond Medium It';
-//     src: url(../fonts/SolitasSerif/SolitasSerif-ConMedIt.woff2) format('woff2');
-//     font-weight: 500;
-//     font-style: normal;
+//     font-family: 'IvyPresto Display';
+//     src: url('../fonts/ivy/IvyPrestoDisplay-ThinItalic.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoDisplay-ThinItalic.woff') format('woff');
+//     font-weight: 100;
+//     font-style: italic;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'IvyPresto Display';
+//     src: url('../fonts/ivy/IvyPrestoDisplay-LightItalic.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoDisplay-LightItalic.woff') format('woff');
+//     font-weight: 300;
+//     font-style: italic;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'IvyPresto Display';
+//     src: url('../fonts/ivy/IvyPrestoDisplay-BoldItalic.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoDisplay-BoldItalic.woff') format('woff');
+//     font-weight: bold;
+//     font-style: italic;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'IvyPresto Display';
+//     src: url('../fonts/ivy/IvyPrestoDisplay-SemiBoldItalic.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoDisplay-SemiBoldItalic.woff') format('woff');
+//     font-weight: 600;
+//     font-style: italic;
 //     font-display: swap;
 // }
 
 // @font-face {
-//     font-family: "Solitas Serif Cond";
-//     src: url(../fonts/SolitasSerif/SolitasSerif-ConMed.woff2) format("woff2");
-//     font-weight: 500;
+//     font-family: 'IvyPresto Text';
+//     src: url('../fonts/ivy/IvyPrestoText-Thin.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoText-Thin.woff') format('woff');
+//     font-weight: 100;
 //     font-style: normal;
 //     font-display: swap;
 // }
-
-// Headings italic
-
 // @font-face {
-//     font-family: 'Solitas Serif Cond Regular It';
-//     src: url(../fonts/SolitasSerif/SolitasSerif-ConRegIt.woff2) format('woff2');
-//     font-weight: normal;
+//     font-family: 'IvyPresto Text';
+//     src: url('../fonts/ivy/IvyPrestoText-Light.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoText-Light.woff') format('woff');
+//     font-weight: 300;
 //     font-style: normal;
 //     font-display: swap;
 // }
+// @font-face {
+//     font-family: 'IvyPresto Text';
+//     src: url('../fonts/ivy/IvyPrestoText-Bold.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoText-Bold.woff') format('woff');
+//     font-weight: bold;
+//     font-style: normal;
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'IvyPresto Text';
+//     src: url('../fonts/ivy/IvyPrestoText-SemiBold.woff2') format('woff2'),
+//         url('../fonts/ivy/IvyPrestoText-SemiBold.woff') format('woff');
+//     font-weight: 600;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+
+
 
 .form-control:not([type="file"]),
 .form-select:not([type="file"]) {

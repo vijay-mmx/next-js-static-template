@@ -1,9 +1,12 @@
-@import "./text-size";
-@import "./loader";
-@import "./header";
-@import "./menu";
+@import "./common/text-size";
+@import "./common/loader";
+@import "./common/header";
+@import "./common/menu";
 
-@import "./button";
-@import "./whatsapp-chat";
+@import "./common/button";
+@import "./common/whatsapp-chat";
 
-@import "./hero";
+@import "./home/hero";
+@import "./home/welcome";
+@import "./home/verticals";
+@import "./home/quote";

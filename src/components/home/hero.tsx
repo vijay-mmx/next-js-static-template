@@ -64,7 +64,6 @@ const Hero = () => {
                     }`,
                     scrub: true,
                     pin: true,
-                    pinType: "fixed",
                 },
                 onComplete: () => {
                     console.log("completed");
@@ -143,34 +142,34 @@ const Hero = () => {
         { scope: containerRef }
     );
 
-    // useLayoutEffect(() => {
-    //     const calculate = () => {
-    //         const titles = document.querySelectorAll<HTMLElement>(".hero-title-wrapper h2");
-    //         const targetHeight = window.innerHeight * 0.60;
-    //         const targetWidth = window.innerWidth * 0.80;
+    useLayoutEffect(() => {
+        const calculate = () => {
+            const titles = document.querySelectorAll<HTMLElement>(".hero-title-wrapper h2");
+            const targetHeight = window.innerHeight * 0.60;
+            const targetWidth = window.innerWidth * 0.80;
     
-    //         // First pass: calculate individual scales
-    //         const scales: number[] = [];
-    //         titles.forEach((title) => {
-    //             const currentHeight = title.offsetHeight;
-    //             const currentWidth = title.scrollWidth;
-    //             const scale = Math.min(targetHeight / currentHeight, targetWidth / currentWidth);
-    //             scales.push(scale);
-    //         });
+            // First pass: calculate individual scales
+            const scales: number[] = [];
+            titles.forEach((title) => {
+                const currentHeight = title.offsetHeight;
+                const currentWidth = title.scrollWidth;
+                const scale = Math.min(targetHeight / currentHeight, targetWidth / currentWidth);
+                scales.push(scale);
+            });
     
-    //         // Average all scales
-    //         const avgScale = scales.reduce((sum, s) => sum + s, 0) / scales.length;
+            // Average all scales
+            const avgScale = scales.reduce((sum, s) => sum + s, 0) / scales.length;
     
-    //         // Second pass: apply the same averaged scale to all titles
-    //         titles.forEach((title) => {
-    //             gsap.set(title, { scale: avgScale });
-    //         });
-    //     };
+            // Second pass: apply the same averaged scale to all titles
+            titles.forEach((title) => {
+                gsap.set(title, { scale: avgScale });
+            });
+        };
     
-    //     calculate();
-    //     window.addEventListener("resize", calculate);
-    //     return () => window.removeEventListener("resize", calculate);
-    // }, []);
+        calculate();
+        window.addEventListener("resize", calculate);
+        return () => window.removeEventListener("resize", calculate);
+    }, []);
 
     return (
         <section className="hero-section-one" ref={containerRef}>

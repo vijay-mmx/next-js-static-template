@@ -1,0 +1,91 @@
+.primary-btn {
+    font-size: 12px;
+    line-height: 2.1428571429em;
+    font-weight: 400;
+    letter-spacing: 0.175em;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    line-height: 1;
+    width: auto;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.8rem 1.5rem;
+    font-size: 12px;
+}
+
+.primary-btn-line {
+    position: absolute;
+    content: "";
+    background-color: currentColor;
+    transition: width 0.5s ease;
+}
+
+.primary-btn-bottom-right,
+.primary-btn-top-left {
+    width: 6.35%;
+    height: 1px;
+}
+
+.primary-btn-bottom-left,
+.primary-btn-top-right {
+    width: 70.5%;
+    height: 1px;
+}
+
+.primary-btn-right {
+    width: 1px;
+    height: 100%;
+}
+
+.primary-btn-top-left {
+    top: -1px;
+    left: 0;
+}
+
+.primary-btn-top-right {
+    top: -1px;
+    right: 0;
+}
+
+.primary-btn-right {
+    top: 0;
+    right: 0;
+}
+
+.primary-btn-bottom-right {
+    bottom: -1px;
+    right: 0;
+}
+
+.primary-btn-bottom-left {
+    bottom: -1px;
+    left: 0;
+}
+
+.primary-btn-left {
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+}
+
+.primary-btn:hover .primary-btn-bottom-right,
+.primary-btn:hover .primary-btn-top-left {
+    width: 70.5%;
+}
+
+.primary-btn:hover .primary-btn-bottom-left,
+.primary-btn:hover .primary-btn-top-right {
+    width: 6.35%;
+}
+
+.primary-btn--filled {
+    background-color: var(--bs-primary);
+    color: white;
+    .primary-btn-line {
+        background-color: var(--bs-primary);
+    }
+}

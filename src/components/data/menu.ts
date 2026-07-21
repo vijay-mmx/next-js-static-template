@@ -4,13 +4,13 @@ export const MENU_ITEMS = [
     {
         name: "Home",
         href: "/",
-        image: "/assets/images/header/home-banner.jpg",
+        image: "/assets/menu/home-banner.jpg",
         sublinks: [],
     },
     {
         name: "Who We Are",
         href: "/Who-we-are",
-        image: "/assets/images/header/buisness-header.jpg",
+        image: "/assets/menu/buisness-header.jpg",
         sublinks: [
             { name: "Our Story", href: "/About-us" },
             { name: "Chairman's Message", href: "/Chairman-message" },
@@ -25,7 +25,7 @@ export const MENU_ITEMS = [
     {
         name: "Media Centre",
         href: "#",
-        image: "/assets/images/header/company-header1.jpg",
+        image: "/assets/menu/company-header1.jpg",
         sublinks: [
             { name: "News & Events", href: "#" },
             { name: "Press Releases", href: "#" },
@@ -35,11 +35,10 @@ export const MENU_ITEMS = [
             { name: "Media Kit", href: "#" },
         ],
     },
-  
     {
         name: "Products",
         href: "#",
-        image: "/assets/images/why-us-image1.jpg",
+        image: "/assets/menu/why-us-image1.jpg",
         sublinks: [
             { name: "Enquiry List + RFQ Form", href: "#" },
             { name: "Plants", href: "#" },
@@ -52,7 +51,7 @@ export const MENU_ITEMS = [
     {
         name: "Careers",
         href: "#",
-        image: "/assets/images/header/supplychain-header.jpg",
+        image: "/assets/menu/supplychain-header.jpg",
         sublinks: [
             { name: "Why BTG", href: "#" },
             { name: "Open Positions", href: "#" },
@@ -63,7 +62,7 @@ export const MENU_ITEMS = [
     {
         name: "Business Verticals",
         href: "#",
-        image: "/assets/images/header/business-building.jpg",
+        image: "/assets/menu/business-building.jpg",
         sublinks: [
             { name: "Ecommerce Portals", href: "#" },
             { name: "DPS Sharjah", href: "#" },
@@ -77,7 +76,7 @@ export const MENU_ITEMS = [
     {
         name: "Global Presence",
         href: "#",
-        image: "/assets/images/header/glopal-new.jpg",
+        image: "/assets/menu/glopal-new.jpg",
         sublinks: [
             { name: "Qatar · Oman · Saudi Arabia", href: "#" },
             { name: "Malaysia · India", href: "#" },
@@ -89,7 +88,7 @@ export const MENU_ITEMS = [
     {
         name: "Our Farms",
         href: "/farms",
-        image: "/assets/images/header/media-header.jpg",
+        image: "/assets/menu/media-header.jpg",
         sublinks: [
             { name: "Ethiopia — Farm Detail Pages", href: "/farms/batian-flowers" },
             { name: "Kenya — Farm Detail Pages", href: "#" },
@@ -98,7 +97,7 @@ export const MENU_ITEMS = [
     {
         name: "Contact",
         href: "#",
-        image: "/assets/images/header/contact-header.jpg",
+        image: "/assets/menu/contact-header.jpg",
         sublinks: [
             { name: "Retail Stores", href: "#" },
             { name: "General Enquiry", href: "#" },
