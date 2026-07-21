@@ -1,4 +1,4 @@
-import Banner from "@/components/home/banner";
+import Hero from "@/components/home/hero";
 import { Metadata } from "next";
 
 // CHANGE THIS Metadata according to you site
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <>
-            <Banner />
+            <Hero />
         </>
     );
 }
