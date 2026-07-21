@@ -1,0 +1,42 @@
+{
+  "name": "sahomes",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "ANALYZE=true next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@hookform/resolvers": "^5.2.1",
+    "@lottiefiles/dotlottie-react": "^0.17.13",
+    "@next/bundle-analyzer": "^15.3.5",
+    "@next/third-parties": "^15.5.4",
+    "@tinymomentum/liquid-glass-react": "^1.0.6",
+    "bootstrap": "^5.3.7",
+    "gsap": "^3.13.0",
+    "isotope-layout": "^3.0.6",
+    "isotope-packery": "^2.0.1",
+    "lucide-react": "^0.525.0",
+    "next": "16.0.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-icons": "^5.5.0",
+    "sass": "^1.89.2",
+    "schema-dts": "^1.1.5",
+    "swiper": "^11.2.10",
+    "vanilla-tilt": "^1.8.1",
+    "zod": "^4.0.15"
+  },
+  "devDependencies": {
+    "@types/isotope-layout": "^3.0.15",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.0",
+    "typescript": "^5"
+  }
+}
