@@ -70,7 +70,7 @@ const Loader = () => {
             <div className="loader-logo">
                 {/* NOTES: "Animation changes" (cmd+f - files search this double quotes) */}
                 {/* <DotLottieReact
-                    src="/assets/Logo_Animation-after-effects.json"
+                    src="/assets/logo/Logo_Animation-after-effects.json"
                     autoplay
                     className="logo"
                 /> */}
