@@ -1,0 +1,144 @@
+$primary: #002447;
+$primary-rgb: rgb(0, 36, 71);
+$accent: #c2b29e;
+$accent-rgb: rgb(194, 178, 158);
+$accent-dark: #af9c89;
+// $accent: #c2b5a3;
+// $kakhi: #6f5d43;
+// $kakhi-rgb: rgb(84, 73, 57);
+
+$font-family-sans-serif: "neue-haas-grotesk-display", -apple-sytem, Roboto, sans-serif;
+$headings-font-family: "Solitas Serif Cond", -apple-sytem, Roboto, sans-serif;
+// $headings-font-family: "neue-haas-grotesk-display", -apple-sytem, Roboto, sans-serif;
+$headings-font-weight: 600;
+$display-font-weight: 600;
+$headings-line-height: 1.1;
+$link-decoration: none;
+$paragraph-margin-bottom: 0px;
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+    xxxl: 1600px,
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1200px,
+    xxxl: 1500px,
+);
+
+$lead-font-size: 1.25rem;
+$lead-font-weight: 400;
+
+$accordion-inner-border-radius: 0;
+$accordion-button-active-bg: transparent;
+$accordion-border-radius: 0;
+$accordion-border-width: 0;
+$accordion-body-padding-x: 0;
+$accordion-button-padding-x: 0;
+$accordion-button-focus-box-shadow: none;
+
+$dropdown-border-radius: 0px;
+
+$modal-content-border-radius: 0px;
+$border-color: #ffffff30;
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+$custom-colors: (
+    "accent": $accent,
+    "accent-rgb": $accent-rgb,
+    "accent-dark": $accent-dark,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+// $body-bg: black;
+$body-bg: #212121;
+$body-color: white;
+
+@import "bootstrap/scss/bootstrap";
+@import "./parts/common";
+@import "./parts/components";
+@font-face {
+    font-family: "Queens";
+    src: url(../fonts/queens/QueensVarTrial.ttf) format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Queens";
+    src: url(../fonts/queens/QueensVarItalicTrial.ttf) format("truetype");
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+// For Headings
+@font-face {
+    font-family: "Solitas Serif Cond";
+    src: url(../fonts/SolitasSerif/SolitasSerif-ConReg.woff2) format("woff2"); //wodd2
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// @font-face {
+//     font-family: 'Solitas Serif Cond Medium It';
+//     src: url(../fonts/SolitasSerif/SolitasSerif-ConMedIt.woff2) format('woff2');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// @font-face {
+//     font-family: "Solitas Serif Cond";
+//     src: url(../fonts/SolitasSerif/SolitasSerif-ConMed.woff2) format("woff2");
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+// Headings italic
+
+// @font-face {
+//     font-family: 'Solitas Serif Cond Regular It';
+//     src: url(../fonts/SolitasSerif/SolitasSerif-ConRegIt.woff2) format('woff2');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
+
+.form-control:not([type="file"]),
+.form-select:not([type="file"]) {
+    padding-left: 0px;
+}
+
+.form-control::file-selector-button,
+.form-select::file-selector-button {
+    border: none;
+    background-color: hsl(0, 0%, 88%);
+    color: #131337;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.invalid-feedback {
+    letter-spacing: 0.5px;
+    color: darkred;
+}
+
+.project-page {
+    position: relative;
+}

@@ -1,0 +1,44 @@
+.read-more-link {
+    width: max-content;
+    height: min-content;
+    position: relative;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    @media screen and (max-width: 1080px) {
+        gap: 10px;
+    }
+    p {
+        color: $accent;
+        transition: color 0.4s ease;
+
+        // font-size: 16px;
+        // font-weight: 400;
+    }
+    .svg-wrapper {
+        position: relative;
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+        @media screen and (max-width: 1080px) {
+            width: 14px;
+            height: 14px;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            path {
+                stroke: $accent;
+            }
+        }
+    }
+    &:hover {
+        p {
+            text-decoration: underline;
+        }
+    }
+}

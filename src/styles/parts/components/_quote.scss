@@ -1,0 +1,90 @@
+.quote-section {
+    // background-image: url("/assets/home-banner/quote-s-2.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    @media screen and (max-width:1440px) {
+        min-height: 530px;
+        height: 530px;
+    }
+    @media screen and (max-width:1126px) {
+        min-height: 500px;
+        height: 500px;
+    }
+
+    .quote-bg {
+        position: absolute;
+        // inset: 0;
+        top: -25%;
+        left: 0;
+        width: 100%;
+        min-height: 150%;
+        object-fit: cover;
+        object-position: bottom;
+        &--bottom {
+            object-position: bottom;
+        }
+    }
+}
+.quote-section::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+.quote-inner svg{
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+    margin-bottom: 2rem;
+    @media screen and (max-width:1440px) {
+        margin-bottom: 1.5rem;
+        width: 55px;
+        height: 55px;
+    }
+}
+.quote-inner{
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    color: #fff;
+    text-align: center;
+
+}
+.quote-text{
+    content: "";
+    display: block;
+    z-index: 2;
+    color: #fff;
+    font-family: Solitas Serif Cond, -apple-sytem, Roboto, sans-serif;
+
+    // font-size: 3rem;
+    // line-height: 1.2;
+    // @media screen and (max-width:1440px) {
+    //     font-size: 2.5rem;
+    // }
+}
+.section-padding {
+    padding: 50px 50px;
+}
+.quote-section img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

@@ -1,0 +1,334 @@
+.primary-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    border: 0.1px solid $primary;
+    border-radius: 50%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 50%;
+        background: $accent;
+        transform: scale(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+        z-index: -1;
+    }
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+
+        path {
+            stroke: $primary;
+        }
+    }
+
+    &:hover {
+        &::before {
+            transform: scale(1);
+        }
+
+        svg {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+}
+
+.banner-arrow {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+    
+    &:hover::after {
+        opacity: 1;
+    }
+    
+    @media screen and (max-width: 1440px) {
+        width: 40px;
+        height: 40px;
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    svg {
+        width: 2rem;
+        height: 2rem;
+
+        path {
+            stroke: #fff;
+        }
+        @media screen and (max-width: 1440px) {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+}
+
+.banner-arrow--black {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        border: 1px solid #222;
+        background: #F4F4F4;
+        transition: background 0.3s ease-in-out;
+    }
+    &:hover::after {
+        background: #222;
+    }
+    svg {
+        width: 24px;
+        height: 24px;
+        color: #222;
+        transition: color 0.3s ease;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            color: #fff;
+        }
+        
+        @media screen and (max-width: 1440px) {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    @media screen and (max-width: 1440px) {
+        width: 34px;
+        height: 34px;
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}
+
+.white-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    border: 0.1px solid #fff;
+    transition: border 0.3s ease-in-out;
+    border-radius: 50%;
+    position: relative;
+
+    @media screen and (max-width: 1440px) {
+        width: 36px;
+        height: 36px;
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 50%;
+        background: $primary;
+        transform: scale(0);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+        z-index: -1;
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+
+        path {
+            stroke: #fff;
+        }
+        @media screen and (max-width: 1440px) {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+
+    &:hover {
+        border: 0.1px solid $primary;
+
+        &::before {
+            transform: scale(1);
+        }
+
+        svg {
+            path {
+                stroke: $accent;
+            }
+        }
+    }
+}
+
+.primaryBg-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+    border: 0.1px solid #fff;
+    transition: border 0.3s ease-in-out;
+    border-radius: 50%;
+    position: relative;
+
+    @media screen and (max-width: 1440px) {
+        width: 36px;
+        height: 36px;
+        svg {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // z-index: 1;
+        border-radius: 50%;
+        background: var(--bs-accent);
+        transform: scale(0);
+        // opacity: 0;
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    svg {
+        z-index: 2;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        path {
+            stroke: #fff;
+        }
+    }
+
+    &:hover {
+        border: 0.1px solid $accent;
+
+        &::before {
+            // opacity: 1;
+            transform: scale(1);
+        }
+
+        svg {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+}
+
+/* _button-link.scss */
+
+.btn-link {
+    position: relative;
+    left: 10px;
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    /* defaults (can be overridden by modifiers or inline style) */
+    --border: $accent;
+    --text: #000;
+    --icon-stroke: #000;
+    --hover-text: $accent-dark;
+
+    .btn-arrow-wrap {
+        // width: 40px;
+        // height: 40px;
+        border: solid 0.4px var(--border);
+        border-radius: 32px;
+        transition: border 0.2s ease-in-out;
+        .btn-arrow {
+            position: relative;
+            width: 32px;
+            height: 32px;
+            left: -10px;
+            transition: left 0.4s ease;
+            path {
+                /* enforce CSS-controlled stroke */
+                stroke: var(--icon-stroke) !important;
+            }
+        }
+    }
+
+    p {
+        color: var(--text);
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+        transition: color 0.4s ease;
+    }
+
+    &:hover {
+        .btn-arrow {
+            left: 13px;
+        }
+
+        p {
+            color: var(--hover-text);
+        }
+    }
+}
+
+/* --- modifiers --- */
+/* primary (matches your .viewproject-link) */
+.btn-link--primary {
+    --border: $accent;
+    --text: #000;
+    --icon-stroke: #000;
+    --hover-text: $accent-dark;
+}
+
+/* alt/intro (matches your .intro-read-link) */
+.btn-link--intro {
+    --border: #fff;
+    --text: $accent;
+    --icon-stroke: $accent;
+    --hover-text: #fff;
+}
