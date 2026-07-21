@@ -66,8 +66,8 @@ $body-bg: #212121;
 $body-color: white;
 
 @import "bootstrap/scss/bootstrap";
-@import "./parts/common";
-@import "./parts/components";
+@import "./common";
+@import "./components";
 @font-face {
     font-family: "Queens";
     src: url(../fonts/queens/QueensVarTrial.ttf) format("truetype");
